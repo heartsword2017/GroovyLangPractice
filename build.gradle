@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+
+
+repositories {
+    mavenCentral()
+    //maven { url 'http://resolver.svc.cfx/all' }
+}
+
+dependencies{
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+    //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.4'
+
+}
