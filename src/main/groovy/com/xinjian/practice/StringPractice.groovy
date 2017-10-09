@@ -30,12 +30,19 @@ class StringPractice {
                     support interpolation so
                     the value of the number is ${d}/
 
+        String k = $/Dollar slashy string are multiple lines and
+                    no dollar sign is the escaping character
+                    There is no need to escape $ or /
+                    but you need to escape $$$/ and $/$$
+                    /$
+
 
         println e
         println f
         println g
         println i
         println j
+        println k
     }
 
 

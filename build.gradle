@@ -1,4 +1,7 @@
 apply plugin: 'java'
+apply plugin: "war"
+apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'groovy'
 
 
 
@@ -10,5 +13,28 @@ repositories {
 dependencies{
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
     //compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.4'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.0.RELEASE'
+
 
 }
+
+buildscript {
+    repositories {
+        jcenter()
+        // enable this to use snapshot versions of Gretty:
+        // maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    }
+
+    dependencies {
+        classpath 'org.akhikhl.gretty:gretty:+'
+    }
+}
+
+
+//sourceSets {
+//    main {
+//        groovy {
+//            srcDirs = ['src/main/groovy']
+//        }
+//    }
+//}
