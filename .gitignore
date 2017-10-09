@@ -1,3 +1,4 @@
 .gradle/
 .idea/
-groovy-practice-object.iml
+GroovyLangPractice.iml
+out
