@@ -3,13 +3,16 @@ package com.xinjian.practice.controller
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.ResponseBody
 
 @Controller
 class HelloXinjianController {
 
-    @RequestMapping(value="/helloxinjian", method = RequestMethod.GET, produces = 'application/html')
+    @RequestMapping(value="/helloxinjian", method = RequestMethod.GET, produces = 'application/json')
+    @ResponseBody
     String sayHelloXinjian(){
-        return 'Hello Xinjian. There is your first groovy spring MVC app'
+        println "Hi, Xinjian! You hit the your first controller! Congratz!"
+        return 'The output of your first controller!!!'
     }
 
 }

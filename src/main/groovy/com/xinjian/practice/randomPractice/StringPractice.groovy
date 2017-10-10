@@ -1,4 +1,4 @@
-package com.xinjian.practice
+package com.xinjian.practice.randomPractice
 
 import org.codehaus.groovy.syntax.Numbers
 

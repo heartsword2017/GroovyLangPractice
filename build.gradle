@@ -38,3 +38,9 @@ buildscript {
 //        }
 //    }
 //}
+
+gretty {
+    httpPort  = 8081
+    contextPath = '/'
+}
+

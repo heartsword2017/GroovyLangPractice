@@ -1,4 +1,4 @@
-package com.xinjian.practice
+package com.xinjian.practice.randomPractice
 
 class CharactersPractice {
     static void main(String[] args) {
