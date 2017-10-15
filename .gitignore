@@ -3,3 +3,5 @@
 GroovyLangPractice.iml
 out
 build
+node_modules
+npm

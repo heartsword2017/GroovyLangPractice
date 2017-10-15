@@ -15,4 +15,21 @@ class HelloXinjianController {
         return 'The output of your first controller!!!'
     }
 
+
+    @RequestMapping(value="/testData", method = RequestMethod.GET, produces = 'application/json')
+    @ResponseBody
+    String generateTestData(){
+        def Data = '''{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}'''
+        return Data
+    }
 }
